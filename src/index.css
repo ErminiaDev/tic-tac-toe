@@ -73,21 +73,20 @@ h1 {
 }
 
 #players.highlight-player li.active {
-  border-color: #f6e35a;
-  animation: pulse 2s infinite ease-in-out;
+  border-color: #71c47f;
 }
 
 #players.highlight-player li.active .player-name,
 #players.highlight-player li.active .player-symbol {
-  color: #f6e35a;
+  color: #71c47f;
 }
 
 #players button {
   width: 3rem;
   border: none;
   background: none;
-  color: #c3ba78;
-  font-size: 0.9rem;
+  color: #74df86;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: color 0.2s;
   padding: 0.5rem 0.25rem 0.25rem 0.25rem;
@@ -95,7 +94,7 @@ h1 {
 }
 
 #players button:hover {
-  color: #f8ca31;
+  color: #fff;
 }
 
 .player {
@@ -108,8 +107,8 @@ h1 {
 .player-name {
   display: inline-block;
   width: 10rem;
-  font-size: 1rem;
-  color: #e1dec7;
+  font-size: 1.5rem;
+  color: #71c47f;
   text-transform: uppercase;
   margin: 0;
   padding: 0.5rem;
@@ -120,19 +119,18 @@ h1 {
 
 .player input {
   font: inherit;
-  font-size: 1rem;
+  font-size: 1.5rem;
   width: 10rem;
   border: none;
   padding: 0.5rem;
-  animation: pulse-text 2s infinite;
-  background-color: #46432f;
+  background-color: #aca788;
   text-align: center;
   text-transform: uppercase;
 }
 
 .player-symbol {
   margin-left: 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #e1dec7;
 }
 
@@ -149,9 +147,9 @@ ol {
 #pre-game button {
   cursor: pointer;
   background: none;
-  color: #f8c031;
+  color: #71c47f;
   border: none;
-  font-family: 'Caprasimo', cursive;
+  font-family: 'Kdam Thmor Pro', cursive;
   font-size: 4rem;
   text-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
   animation: pulse-text-size 2s infinite ease-out;
@@ -184,7 +182,7 @@ ol {
   color: #3f3b00;
   font-size: 5rem;
   cursor: pointer;
-  font-family: 'Caprasimo', cursive;
+  font-family: 'Kdam Thmor Pro', cursive;
   padding: 1rem;
 }
 
@@ -203,10 +201,10 @@ ol {
 }
 
 #game-over h2 {
-  font-family: 'Caprasimo', cursive;
+  font-family: 'Kdam Thmor Pro', cursive;
   font-size: 4rem;
   text-align: center;
-  color: #fcd256;
+  color: #71c47f;
   margin: 0;
 }
 
@@ -221,8 +219,8 @@ ol {
   margin: 0 auto;
   font-size: 1.5rem;
   background: none;
-  border: 2px solid #fcd256;
-  color: #fcd256;
+  border: 2px solid #71c47f;
+  color: #71c47f;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
@@ -231,7 +229,7 @@ ol {
 }
 
 #game-over button:hover {
-  background: #fcd256;
+  background: #71c47f;
   color: #3f3b00;
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(255, 187, 0, 0.8);
@@ -239,7 +237,7 @@ ol {
 
 #log {
   max-width: 20rem;
-  color: #3f3b00;
+  color: #71c47f;
   list-style: none;
   margin: 2rem auto;
   padding: 0;
@@ -253,17 +251,17 @@ ol {
 }
 
 #log li.highlighted {
-  background-color: #3f3b00;
+  background-color: #71c47f;
   color: white;
 }
 
 #game-hints {
   text-align: center;
-  color: #46432f;
+  color: #aca788;
 }
 
 #game-hints h2 {
-  font-family: 'Caprasimo', cursive;
+  font-family: 'Kdam Thmor Pro', cursive;
   font-size: 2rem;
   margin: 0;
 }
@@ -283,67 +281,4 @@ ol {
   margin-top: 1.5rem;
 }
 
-@keyframes slide-in-from-left {
-  0% {
-    opacity: 0;
-    transform: translateX(-30%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
-@keyframes pulse-text {
-  0% {
-    color: #e1dec7;
-  }
-  50% {
-    color: #9f9d83;
-  }
-  100% {
-    color: #e1dec7;
-  }
-}
-
-@keyframes pulse-text-size {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    border-color: #f6e35a;
-    box-shadow: 0 0 0 0 rgba(246, 227, 90, 0.4);
-  }
-  50% {
-    border-color: #f8c031;
-    box-shadow: 0 0 0 0.5rem rgba(248, 165, 49, 0);
-  }
-  100% {
-    border-color: #f6e35a;
-    box-shadow: 0 0 0 0 rgba(246, 227, 90, 0);
-  }
-}
-
-/* Fancy animation for showing the "Game Over" element */
-@keyframes pop-in {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  80% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
